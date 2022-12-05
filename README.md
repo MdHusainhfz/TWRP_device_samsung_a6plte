@@ -4,7 +4,7 @@ The Galaxy A6 Plus 2018 (codenamed _"a6plte"_) is an mid-range smartphone from S
 
 It was announced in May 2018 and released in May 2018.
 
-There are also two different variants for Taiwan (a52sxqzt) and Korea (a52sxqks).
+There are also different variants and models, Galaxy A9 Star Lite in China; Galaxy Jean in Korea; SM-A605FN, SM-A605G, SM-A605F, SM-A605GN, SM-A6050, SM-A605K, SM-A605X, SM-A6058
 
 ## Device specifications
 
@@ -28,7 +28,7 @@ There are also two different variants for Taiwan (a52sxqzt) and Korea (a52sxqks)
 
 ## Device picture
 
-<img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a6-plus-2018-1.jpg" width="45%"/>
+<img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a6-plus-2018-1.jpg" width="75%"/>
 
 ## Kernel source 
 
@@ -51,7 +51,7 @@ git clone https://github.com/MdHusainHfz/TWRP_device_samsung_a6plte.git -b twrp-
 ```bash
 export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
-lunch twrp_a6plte-eng
+lunch omni_a6plte-eng
 mka recoveryimage
 ```
 

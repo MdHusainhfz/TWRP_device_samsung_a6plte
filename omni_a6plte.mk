@@ -25,7 +25,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit Telephony packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_q.mk)
+# product originally launched with oreo
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit language packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -44,3 +45,4 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A605X
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
