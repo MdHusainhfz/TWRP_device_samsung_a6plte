@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+ALLOW_MISSING_DEPENDENCIES := true
+
 add_lunch_combo omni_a6plte-eng
 add_lunch_combo omni_a6plte-user
 add_lunch_combo omni_a6plte-userdebug
