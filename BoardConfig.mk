@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-ALLOW_MISSING_DEPENDENCIES := true
 
 # Platform
 DEVICE_CODENAME := a6plte
@@ -127,18 +126,23 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-#TW_MAX_BRIGHTNESS := 36500
-#TW_DEFAULT_BRIGHTNESS := 15000
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone23/temp"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 150
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_SUPERSU := true
 TW_USE_NEW_MINADBD := true
 TW_EXTRA_LANGUAGES := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_INPUT_BLACKLIST := "sec_e-pen-pad"
+#TW_INPUT_BLACKLIST := "hbtp_vm"
+#TW_INPUT_BLACKLIST := "sec_e-pen-pad"
 #TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_MTP_DEVICE := /dev/mtp_usb
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
+#TW_MTP_DEVICE := /dev/mtp_usb
+
+TWHAVE_SELINUX := true
+TW_DEFAULT_LANGUAGE := en-GB
+TWRP_INCLUDE_LOGCAT := true
 

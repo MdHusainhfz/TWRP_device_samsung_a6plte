@@ -1,4 +1,4 @@
-# TWRP Device Tree for Samsung Galaxy A6 Plus 2018
+# TWRP Device Tree for Samsung Galaxy A6 Plus (2018)
 
 The Galaxy A6 Plus 2018 (codenamed _"a6plte"_) is an mid-range smartphone from Samsung.
 
@@ -30,7 +30,7 @@ There are also different variants and models, Galaxy A9 Star Lite in China; Gala
 
 <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a6-plus-2018-1.jpg" width="75%"/>
 
-## Kernel source 
+## Kernel source
 
 Available at [https://github.com/MdHusainHfz/android_kernel_samsung_a6plte/](https://github.com/MdHusainHfz/android_kernel_samsung_a6plte/)
 
