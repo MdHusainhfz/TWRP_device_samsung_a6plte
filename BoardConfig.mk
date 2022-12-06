@@ -57,6 +57,8 @@ PLATFORM_SECURITY_PATCH := 2022-06-01
 # Kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/seEnforcing.mk
 
 BOARD_KERNEL_CMDLINE := \
     console=null \
@@ -66,17 +68,20 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.bootdevice=7824900.sdhci \
     lpm_levels.sleep_disabled=1 \
 	service_locator.enable=1
+#
 
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := \
     --board SRPRB26B003RU \
-    --hash_type sha1 \
     --kernel_offset 0x00008000 \
     --ramdisk_offset 0x02000000 \
     --second_offset 0x00F00000 \
     --tags_offset 0x01E00000 \
     --header_version 0
+#
+
+BOARD_SEPOLICY_VERS := current
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
