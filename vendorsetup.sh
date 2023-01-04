@@ -15,6 +15,7 @@
 #
 
 ALLOW_MISSING_DEPENDENCIES := true
+export LC_ALL=C
 
 add_lunch_combo omni_a6plte-eng
 add_lunch_combo omni_a6plte-user

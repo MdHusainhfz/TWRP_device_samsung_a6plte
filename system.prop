@@ -1,2 +1,6 @@
 persist.sys.usb.config=mtp
 #sys.usb.controller=a600000.dwc3
+
+ro.display.series=samsung_a6plte
+ro.product.board=msm8953
+ro.board.platform=msm8953
