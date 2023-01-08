@@ -149,8 +149,8 @@ TW_USE_NEW_MINADBD := true
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 #TW_INPUT_BLACKLIST := "sec_e-pen-pad"
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_MTP_DEVICE := /dev/mtp_usb
+#TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_MTP_DEVICE := "/dev/mtp_usb"
 
 TWHAVE_SELINUX := true
 TWRP_INCLUDE_LOGCAT := true
