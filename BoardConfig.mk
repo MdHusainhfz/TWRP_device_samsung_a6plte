@@ -55,6 +55,7 @@ PLATFORM_VERSION := 10
 PLATFORM_SECURITY_PATCH := 2022-06-01
 
 # Kernel
+TARGET_KERNEL_CONFIG := a6plte_kor_ktt_defconfig
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -67,7 +68,7 @@ BOARD_KERNEL_CMDLINE := \
     ehci-hcd.park=3 \
     androidboot.bootdevice=7824900.sdhci \
     lpm_levels.sleep_disabled=1 \
-	service_locator.enable=1
+    service_locator.enable=1
 #
 
 BOARD_KERNEL_BASE := 0x80000000
