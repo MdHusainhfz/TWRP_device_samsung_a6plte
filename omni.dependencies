@@ -17,10 +17,4 @@
         "target_path"   :   "hardware/samsung",
         "revision"      :   "lineage-16.0"
     }
-    {
-        "remote"        :   "github",
-        "repository"    :   "MdHusainhfz/android_kernel_samsung_a6plte",
-        "target_path"   :   "device/samsung/a6plte",
-        "revision"      :   "master"
-    },
 ]
