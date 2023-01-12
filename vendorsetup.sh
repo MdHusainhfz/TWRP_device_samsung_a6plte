@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-ALLOW_MISSING_DEPENDENCIES := true
 export LC_ALL=C
 
 add_lunch_combo omni_a6plte-eng
